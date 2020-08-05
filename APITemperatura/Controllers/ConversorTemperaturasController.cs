@@ -13,7 +13,7 @@ namespace APITemperatura.Controllers
             double temperatura)
         {
             logger.LogInformation(
-                $"Recebida temperatura para conversão: {temperatura}");
+                $"Recebida temperatura para conversão: {temperatura}...");
 
             return new
             {
