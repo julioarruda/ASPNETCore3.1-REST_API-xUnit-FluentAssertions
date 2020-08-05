@@ -18,7 +18,8 @@ namespace APITemperatura.Controllers
             return new
             {
                 Fahrenheit = temperatura,
-                Celsius = ConversorTemperatura.FahrenheitParaCelsius(temperatura)
+                Celsius = ConversorTemperatura.FahrenheitParaCelsius(temperatura),
+                Mensagem = "Live de Certificação"
             };
         }
     }
