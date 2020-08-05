@@ -19,7 +19,7 @@ namespace APITemperatura.Controllers
             {
                 Fahrenheit = temperatura,
                 Celsius = ConversorTemperatura.FahrenheitParaCelsius(temperatura),
-                Mensagem = "Live de Certificação"
+                Mensagem = "Live de Certificação - última alteração"
             };
         }
     }
