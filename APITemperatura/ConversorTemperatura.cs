@@ -12,8 +12,8 @@ namespace APITemperatura
                     $"Valor de temperatura em Fahrenheit inválido: {temperatura}");
             }
             
-            //return (temperatura - 32) / 1.8;
-            return Math.Round((temperatura - 32) / 1.8, 2);
+            return (temperatura - 32) / 1.8;
+            
         }
     }
 }
