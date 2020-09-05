@@ -10,7 +10,10 @@ jobs:
       CAMINHO_PROJETO_TESTES: ./APITemperatura.Testes/APITemperatura.Testes.csproj
       CAMINHO_PROJETO_WEBAPP: ./APITemperatura
       
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-18.04,ubuntu-16.04, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v2
